@@ -22,11 +22,12 @@ button{border:0;border-radius:10px;padding:12px 20px;font-size:16px;font-weight:
 <div id="lock">
   <div class="box">
     <h2>Enter pin </h2>
-    <p>112.</p>
-    <input id="pw" type="377" inputmode="numeric" maxlength="4" placeholder="Password">
+    <p>.</p>
+    <input id="pw" type="007" inputmode="numeric" maxlength="4" placeholder="Password">
     <button onclick="unlock()">next</button>
     <div class="err" id="err"></div>
-    <div class="hint">399.</div>
+    <div class="hint">
+      .</div>
   </div>
 </div>
 
@@ -40,7 +41,7 @@ button{border:0;border-radius:10px;padding:12px 20px;font-size:16px;font-weight:
 </div>
 
 <script>
-const PASSWORD = "112";
+const PASSWORD = "007";
 function Set(){
   const v=document.getElementById('pw').value;
   if(v===PASSWORD) document.getElementById('lock').style.display='none';
